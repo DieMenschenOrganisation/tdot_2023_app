@@ -3,8 +3,6 @@ services:
     build: https://github.com/DieMenschenOrganisation/tdot_2023_scanner_app.git#functionallity
     ports:
       - 8080:443
-    env_file:
-      - client.env
 
   scanner_backend:
     build: https://github.com/DieMenschenOrganisation/tdot_2023_backend.git#master
