@@ -1,6 +1,6 @@
 services:
   scanner_app:
-    build: https://github.com/DieMenschenOrganisation/tdot_2023_scanner_app.git#functionallity
+    build: https://github.com/DieMenschenOrganisation/tdot_2023_scanner_app.git#prod
     ports:
       - 8080:443
 
