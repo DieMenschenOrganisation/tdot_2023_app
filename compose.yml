@@ -16,4 +16,4 @@ services:
   host_app:
     build: https://github.com/DieMenschenOrganisation/tdot_2023_host_app.git
     ports:
-      - 8080:443
+      - 8081:443
