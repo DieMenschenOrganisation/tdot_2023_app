@@ -1,11 +1,11 @@
 services:
   scanner_app:
-    build: https://github.com/DieMenschenOrganisation/tdot_2023_scanner_app.git#master
+    build: https://github.com/DieMenschenOrganisation/tdot_2023_scanner_app.git
     ports:
       - 8080:443
 
   scanner_backend:
-    build: https://github.com/DieMenschenOrganisation/tdot_2023_backend.git#master
+    build: https://github.com/DieMenschenOrganisation/tdot_2023_backend.git
     ports:
       - 8000:8000
     env_file:
@@ -13,6 +13,6 @@ services:
 #    network_mode: host
 
   host_app:
-    build: https://github.com/DieMenschenOrganisation/tdot_2023_host_app.git#master
+    build: https://github.com/DieMenschenOrganisation/tdot_2023_host_app.git
     ports:
       - 8080:443
