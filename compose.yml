@@ -3,7 +3,7 @@ services:
     build:
       context: https://github.com/DieMenschenOrganisation/tdot_2023_scanner_app.git
     ports:
-      - 8080:443
+      - 8080:80
 
   scanner_backend:
     build: https://github.com/DieMenschenOrganisation/tdot_2023_backend.git
