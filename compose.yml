@@ -21,4 +21,4 @@ services:
   reverse_proxy:
     build: https://github.com/DieMenschenOrganisation/tdot_2023_reverse_proxy.git
     ports:
-      - 4321:4321
+      - 80:80
