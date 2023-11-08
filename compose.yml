@@ -17,3 +17,8 @@ services:
     build: https://github.com/DieMenschenOrganisation/tdot_2023_host_app.git
     ports:
       - 8081:443
+
+  reverse_proxy:
+    build: https://github.com/DieMenschenOrganisation/tdot_2023_reverse_proxy.git
+    ports:
+      - 4321:4321
