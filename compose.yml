@@ -10,10 +10,15 @@ services:
     ports:
       - 8081:80
 
-  slots_roulette_app:
+  slots_blackjack_app:
     build: https://github.com/DieMenschenOrganisation/tdot_2023_slots.git
     ports:
       - 8082:3000
+
+  roulette:
+    build: https://github.com/DieMenschenOrganisation/tdot_2023_roulette.git
+    ports:
+      - 8083:3000
 
   backend:
     build: https://github.com/DieMenschenOrganisation/tdot_2023_backend.git
