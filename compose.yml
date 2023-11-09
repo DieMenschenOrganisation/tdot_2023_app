@@ -5,18 +5,22 @@ services:
     ports:
       - 8080:80
 
-  scanner_backend:
+  host_app:
+    build: https://github.com/DieMenschenOrganisation/tdot_2023_host_app.git
+    ports:
+      - 8081:80
+
+  slots_roulette_app:
+    build: https://github.com/DieMenschenOrganisation/tdot_2023_slots.git
+    ports:
+      - 8082:3000
+
+  backend:
     build: https://github.com/DieMenschenOrganisation/tdot_2023_backend.git
     ports:
       - 8000:8000
     env_file:
        - database.env
-#    network_mode: host
-
-  host_app:
-    build: https://github.com/DieMenschenOrganisation/tdot_2023_host_app.git
-    ports:
-      - 8081:80
 
   reverse_proxy:
     build: https://github.com/DieMenschenOrganisation/tdot_2023_reverse_proxy.git
